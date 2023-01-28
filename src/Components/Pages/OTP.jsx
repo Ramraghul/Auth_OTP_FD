@@ -93,7 +93,7 @@ function OTP() {
 
                 <div className="container">
                     <div className="row pt-5">
-                        <div className="mx-auto col-xl-5 col-md-7 mb-4 mt-5 pt-5"></div>
+                        <div className="mx-auto col-xl-5 col-md-7 mb-4 mt-5 pt-5">
 
                         {/* OTP Validation */}
                         <div className="card fadeInDown">
@@ -127,7 +127,7 @@ function OTP() {
                     </div>
                 </div>
             </div>
-
+            </div>
         </>
     )
 }
