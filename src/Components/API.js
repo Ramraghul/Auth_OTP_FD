@@ -1,3 +1,3 @@
 export const API={
-    Call:"http://localhost:8080/Auth"
+    Call:"https://beackendauth.vercel.app/Auth"
 }
