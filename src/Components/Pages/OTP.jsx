@@ -113,6 +113,7 @@ function OTP() {
                                         </div>
 
                                         <div className="fadeIn third">
+                                            <h6 className="text-center text-danger mb-2">Your OTP is : <strong>{Verifiy.otp}</strong></h6>
                                             <h4 className='text-center text-white'>{minutes}:{seconds < 10 ? `0${seconds}` : seconds} minutes left</h4>
                                         </div>
                                         <div className="text-center mt-5 fadeIn fourth text-light">

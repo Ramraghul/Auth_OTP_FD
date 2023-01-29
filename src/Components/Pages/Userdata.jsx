@@ -42,7 +42,7 @@ function Userdata() {
                 Toast.fire({ icon: 'success', title: `OTP Successfully Sended` })
                 if (change.data) {
                     const value = change.data.data
-                    Navigation('/OTPVerify', { state: { id:value.UserID, Token: value.Token } })
+                    Navigation('/OTPVerify', { state: { id:value.UserID, Token: value.Token,otp:value.OTP } })
                 }
             } catch (error) {
                 Toast.fire({ icon: 'error', title: `${error}` })
