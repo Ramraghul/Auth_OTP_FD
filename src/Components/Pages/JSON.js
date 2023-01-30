@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import { API } from '../API';
 
@@ -8,15 +8,20 @@ function JSON() {
     const allData = Location.state.id
     const [data, setData] = useState([])
 
+    useEffect(() => {
+        datas(allData)
+    }, [])// eslint-disable-line react-hooks/exhaustive-deps
+    
+
     let datas = async (id) => {
         try {
             let final = await axios.get(`${API.Call}/Data/${id}`,)
             setData(final.data)
         } catch (error) {
-
+            console.log(error);
         }
     }
-    datas(allData)
+    
 
 
     return (
